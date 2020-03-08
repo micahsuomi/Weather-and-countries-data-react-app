@@ -1,0 +1,33 @@
+.about-container {
+    padding: 8rem 6rem;
+    min-height: 100vh;
+}
+
+.about-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-title {
+    text-transform: uppercase;
+    color: var(--primary);
+}
+
+.about-paragraph {
+    font-size: 18px;
+    margin-top: 2rem;
+    line-height: 1.9;
+    color: var(--secondary-dark);
+
+}
+
+.about-paragraph a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.about-paragraph a:hover {
+    color: orange;
+}

@@ -1,0 +1,123 @@
+
+.header-top {
+    padding: 1rem 0;
+    /* background-image: linear-gradient(to left, rgba(253, 252, 251, 0.9), rgba(70, 106, 112, 0.9)), url("https://images.pexels.com/photos/346832/pexels-photo-346832.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"); */
+    background-position: center;
+    background-size: cover;
+    /* background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%); */
+    background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898; 
+    background-blend-mode: multiply,multiply;
+    padding: 4rem 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #596164;
+    min-height: 30vh;
+  
+    
+  }
+  
+  .title {
+    color: white;
+    font-size: 35px;
+    letter-spacing: .6rem;
+    text-align: center;
+  }
+  
+  .subtitle {
+    color: skyblue;
+    text-align: center;
+  }
+
+  
+.search-input {
+    width: 45rem;
+    padding: 1.1rem;
+    border-radius: 50px;
+    border: 1px solid rgba(116, 160, 255, 0.6);
+    
+    
+  }
+
+  
+.buttons-wrapper {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .countries-wrapper {
+    padding: 2rem 1rem;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-items: center;
+    grid-row-gap: .8rem;
+    grid-column-gap: .8rem;
+    background-color: rgb(253, 247, 255);
+  }
+  
+  
+  @media screen and (max-width: 1024px) {
+    .countries-wrapper {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .countries-wrapper {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .title {
+      font-size: var(--small);
+    }
+  }
+
+  
+@media screen and (max-width: 500px) {
+
+  .header-top {
+      padding: 5rem 0rem;
+  }
+  .title {
+      font-size: 16px;
+      letter-spacing: .4rem;
+
+
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .search-input {
+      width: 18rem;
+      padding: .8rem;
+
+  }
+
+  .buttons-wrapper {
+      flex-direction: column;
+      margin-top: 1rem;
+  }
+
+  .btn {
+      margin: .2rem;
+  }
+
+  .name-btn,
+  .capital-btn,
+  .population-btn {
+      padding: .8rem;
+  }
+
+
+
+  .countries-wrapper {
+      grid-template-columns: 1fr;
+      justify-items: center;
+  }
+}

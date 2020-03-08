@@ -1,0 +1,53 @@
+
+.header-top__weather {
+    padding: 1rem 0;
+    background-image: linear-gradient(to right, #48c6ef 0%, #6f86d6 100%);
+    background-position: center;
+    background-size: cover;
+    padding: 4rem 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #596164;
+    min-height: 30vh;
+  
+    
+  }
+
+  .weather-form {
+        /* background-image: linear-gradient(to right, #92fe9d 0%, #00c9ff 100%); */
+            flex-direction: row;   
+            padding: 2rem 4rem;
+  }
+
+.search-input__weather {
+    width: 25rem;
+    
+    
+  }
+
+  .weather-btn {
+      padding: 1.2rem;
+  }
+.countries-weather__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 5rem;
+  
+  }
+
+  @media screen and (max-width: 500px) {
+    .header-top__weather {
+      padding: 4rem 0rem;
+    }
+
+    .weather-btn {
+      padding: .8rem;
+  }
+  .countries-weather__wrapper {
+    padding: 2rem 1rem;
+}
+  }
+
