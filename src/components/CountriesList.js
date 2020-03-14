@@ -4,6 +4,7 @@ import '../assets/style/countrieslist.css';
 import Loader from './Loader';
 
 
+
 let flag = false;
 
 const toggle = () => {
@@ -28,11 +29,13 @@ class CountriesList extends Component {
                   text: '',
                   isTextDisplaying: false,
                   arrowUp: '',
-                  
+               
                   }
+                
             }
 
   // mounting
+  
   componentDidMount() {
     const url = 'https://restcountries.eu/rest/v2/all'
     fetch(url)
@@ -44,7 +47,6 @@ class CountriesList extends Component {
         countryArr.push({flag, name, capital, population, area, region, languages, currencies})
       }
       this.setState({countries: countryArr, filteredCountries: countryArr, isLoading: true})
-      console.log('I am fetching data')
   
     })
 
@@ -118,8 +120,8 @@ class CountriesList extends Component {
   
   handleChange = (e) => {
     let countryArr = [];
-    let {value} = e.target;
-    this.setState({filteredCountries: value})
+    let {value, name} = e.target;
+    this.setState({filteredCountries: value, [name]: value})
     console.log(value, this.state.filteredCountries)
       for(const country of this.state.countries) {
         let {flag, name, capital, area, region, population} = country
@@ -144,8 +146,6 @@ class CountriesList extends Component {
 
   }
 
- 
- 
   render() {
   
     let countriesList = this.state.filteredCountries.map((country) => (
@@ -160,9 +160,9 @@ class CountriesList extends Component {
               />
     ))
 
-  
+
       return (
-           <div className="">
+           <div className="wrapper">
               <div className="header">
                   <div className="header-top">
                   <h2 className="title">Countries Data</h2>
@@ -184,7 +184,7 @@ class CountriesList extends Component {
                       <button className="btn capital-btn" style={this.state.isBtnCapitalClicked ? style1 : style2} onClick={this.sortByCapital}>Capital{this.state.isBtnCapitalClicked ? <i className={this.state.arrow}></i> : null}</button>
                       
                       <button className="btn population-btn" style={this.state.isBtnPopulationClicked ? style1 : style2} onClick={this.sortByPopulation}>Population{this.state.isBtnPopulationClicked ? <i className={this.state.arrow}></i> : null}</button> 
-                      <p>{this.state.warning}</p>
+
                   </div>
               </form>
   

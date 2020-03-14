@@ -171,20 +171,22 @@ button:hover {
       display: block;
   }
   .navbar {
-      height: 4.2rem;
+    height: 3.5rem;
   }
   .hamburger-bar,
   .exit {
-      position: absolute;
-      top: 2%;
-      right: 5%;
+      position: absolute; 
+      top: 1%;
+      right: 2.5%;
       color: white;
       z-index: 5;
       cursor: pointer;
+      float: right;
   }
 
   .exit {
-      right: 2.5%;
+      right: 2.75%;
+
   }
 
   

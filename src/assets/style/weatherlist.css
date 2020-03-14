@@ -17,8 +17,8 @@
 
   .weather-form {
         /* background-image: linear-gradient(to right, #92fe9d 0%, #00c9ff 100%); */
-            flex-direction: row;   
-            padding: 2rem 4rem;
+      flex-direction: row;   
+      padding: 2rem 4rem;
   }
 
 .search-input__weather {
@@ -30,11 +30,18 @@
   .weather-btn {
       padding: 1.2rem;
   }
+
+  .deg {
+    font-size: 25px;
+    color: white;
+  }
 .countries-weather__wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 2rem 5rem;
+    background-color: rgb(236, 244, 247);
+
   
   }
 

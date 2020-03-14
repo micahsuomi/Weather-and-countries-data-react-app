@@ -10,10 +10,12 @@
 .footer-left__links,
 .footer-right__links {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     list-style: none;
+    align-items: center;
 
 }
+
 
 .footer-link a {
     text-decoration: none;
@@ -21,4 +23,8 @@
     opacity: .9;
     margin-left: .6rem;
 
+}
+
+.logo {
+    width: 10%;
 }

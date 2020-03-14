@@ -19,7 +19,7 @@
 
 .home-title {
     color: white;
-    font-size: var(--big);
+    font-size: var(--medium);
     letter-spacing: 0.4rem;
     text-align: center;
 }
@@ -38,9 +38,11 @@
     margin-top: 4rem;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
     .home-container {
         padding: 0;
+        /* background-image: linear-gradient(to right, #48c6ef 0%, #6f86d6 100%); */
+        background-size: cover;
 
     }
     .home-title {
@@ -51,5 +53,9 @@
     .home-subtitle {
         font-size: 14px;
         
+    }
+
+    .home-animation__name {
+        font-size: 13px;
     }
 }

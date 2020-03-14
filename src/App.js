@@ -7,11 +7,9 @@ import WeatherList from './components/WeatherList';
 import Footer from './components/Footer';
 import {BrowserRouter,
   Route,
-  Link,
   NavLink,
   Switch,
-  Prompt,
-  Redirect
+ 
 
 } from 'react-router-dom';
 
