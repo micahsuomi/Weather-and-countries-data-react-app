@@ -6,9 +6,9 @@ import CountriesList from './components/CountriesList';
 import WeatherList from './components/WeatherList';
 import Footer from './components/Footer';
 import {BrowserRouter,
-  Route,
-  NavLink,
-  Switch,
+              Route,
+              NavLink,
+              Switch,
  
 
 } from 'react-router-dom';
@@ -19,16 +19,24 @@ class App extends Component {
           isToggleShowing: true,
           isExitShowing: false,
           addClass: true,
-          hideClass: true
+          hideClass: true,
+          isClicked: false
   }
    
   toggle = () => {
-    this.setState({addClass: !this.state.addClass, hideClass: !this.state.hideClass, isToggleShowing: false, isExitShowing: true})
+    this.setState({
+          addClass: !this.state.addClass, 
+          hideClass: !this.state.hideClass, 
+          isToggleShowing: false, 
+          isExitShowing: true})
     
 }
 
   close = () => {
-    this.setState({addClass: !this.state.addClass, isToggleShowing: true, isExitShowing: false})
+    this.setState({
+          addClass: !this.state.addClass, 
+          isToggleShowing: true, 
+          isExitShowing: false})
 
 }
   render() {

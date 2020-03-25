@@ -1,8 +1,7 @@
 
 .header-top__weather {
     padding: 1rem 0;
-    background-image: linear-gradient(to right, #48c6ef 0%, #6f86d6 100%);
-    background-position: center;
+    background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);    background-position: center;
     background-size: cover;
     padding: 4rem 8rem;
     display: flex;
@@ -31,18 +30,98 @@
       padding: 1.2rem;
   }
 
+  .fa-plus-circle {
+    color: var(--primary);
+    cursor: pointer;
+    margin-left: 1rem;
+
+
+
+  }
+  .fa-plus-circle:hover {
+    color: var(--secondary);
+  }
+  .fa-plus-circle:focus {
+    outline: none;
+    
+  }
+
+
   .deg {
     font-size: 25px;
     color: white;
   }
+
+  .text-cards {
+    text-align: center;
+    color: white;
+  }
+
 .countries-weather__wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 2rem 5rem;
-    background-color: rgb(236, 244, 247);
+    background-color: rgb(75, 82, 83);
 
   
+  }
+
+  
+  .new-countries-weather__wrapper {
+    background-color: rgb(66, 72, 73);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 2rem;
+    grid-gap: 1rem;
+    justify-items: center;
+
+  }
+
+  .added-country {
+    color: white;
+    padding: 1rem 1rem;
+    border-radius: 3px;
+    width: 15rem;
+    line-height: 1.6;
+    background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%); 
+    
+  }
+
+  .added-country-exit__container {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .added-country h5, p {
+    text-align: center;
+  }
+
+  .added-country h5 {
+    font-size: 20px;
+  }
+
+  
+  .fa-times-circle {
+    cursor: pointer;
+    margin-left: 1rem;
+  }
+
+  .fa-times-circle:hover {
+    color: lightblue;
+  }
+
+  .weather-country__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+  }
+
+  .image-icon {
+    border-radius: 50%;
+    margin-top: 1rem;
   }
 
   @media screen and (max-width: 500px) {
@@ -57,4 +136,5 @@
     padding: 2rem 1rem;
 }
   }
+
 

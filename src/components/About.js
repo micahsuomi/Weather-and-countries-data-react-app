@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../assets/style/about.css';
 const linkRest = 'https://restcountries.eu/';
-const linkWeather = 'https://weatherstack.com/';
+const linkWeather = 'https://openweathermap.org/';
 
 
 class About extends Component {
@@ -17,7 +17,7 @@ class About extends Component {
             <div className="about-container">
                 <div className="about-wrapper">
                     <h1 className="about-title">About</h1>
-                    <p className="about-paragraph">This project was built during my full-stack web development course at Integrify Coding Academy in Helsinki. The project uses <a href={linkWeather} target="blank">WeatherStack</a>  and <a href={linkRest} target="blank">REST COUNTRIES</a> APIs. While the REST COUNTRIES APIs is free, the WeatherStack API offers a free subscription of 1000 calls per month. It is a gret API to use to fetch and display weather data.<br/><br/>
+                    <p className="about-paragraph">This project was built during my full-stack web development course at Integrify Coding Academy in Helsinki. The project uses <a href={linkWeather} target="blank">OpenWeather</a>  and <a href={linkRest} target="blank">REST COUNTRIES</a> APIs. While the REST COUNTRIES APIs is free, the WeatherStack API offers a free subscription of 1000 calls per month. It is a gret API to use to fetch and display weather data.<br/><br/>
                     In this application can search countries by name or capital and sort result by name, capital or population.</p>
                     
 
