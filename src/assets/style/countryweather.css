@@ -1,6 +1,6 @@
 
 .country-weather__container {
-    width: 22rem;
+    width: 24rem;
     height: 31rem;
     padding: 3rem 1rem;
     background-image: linear-gradient(to right, #48c6ef 0%, #6f86d6 100%);
@@ -28,7 +28,8 @@
 
     .country-weather__container {
         width: 20rem;
-        height: 23rem;
+        height: 27rem;
+
         
     }
     .country-weather__container h4 {
