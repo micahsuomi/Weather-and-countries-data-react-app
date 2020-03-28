@@ -296,9 +296,11 @@ class WeatherList extends Component {
                   <input className="search-input search-input__weather" 
                       name='country'
                       onChange={this.handleChange}
-                      placeholder="Search weather by city" />           
+                      placeholder="Search weather by city" />    
+                      <div className="search-add__wrapper">       
                         <button className="weather-btn">Search</button>  
                          <i className="fas fa-plus-circle fa-2x" onClick={this.addCountry}></i> 
+                         </div>
                   </form>
                   <p>{this.state.warning}</p>                
 

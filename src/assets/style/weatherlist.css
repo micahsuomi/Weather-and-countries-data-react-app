@@ -152,4 +152,20 @@
 }
   }
 
+  @media screen and (max-width: 320px) {
+    .weather-form {
+      flex-direction: column;
+    }
+
+    .search-input__weather {
+      width: 17rem;
+    }
+    .search-add__wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 2rem;
+    }
+  }
+
 
