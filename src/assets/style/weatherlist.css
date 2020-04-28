@@ -17,13 +17,19 @@
   .weather-form {
         /* background-image: linear-gradient(to right, #92fe9d 0%, #00c9ff 100%); */
       flex-direction: row;   
-      padding: 2rem 4rem;
+      padding: 3rem 4rem;
   }
 
 .search-input__weather {
     width: 25rem;
     
     
+  }
+
+  .search-add__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .weather-btn {
@@ -160,12 +166,7 @@
     .search-input__weather {
       width: 17rem;
     }
-    .search-add__wrapper {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 2rem;
-    }
+  
   }
 
 

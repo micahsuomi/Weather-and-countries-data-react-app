@@ -34,7 +34,6 @@ const CountryWeather = (props) => {
      if(weatherDescription.includes('Clouds')) {
          index =+ 2
           backGroundStyles = backGroundStyles[index];
-          console.log(backGroundStyles)
          weatherIcons = weatherIcons.cloudy
      } else if(weatherDescription.includes('Clear')) {
          weatherIcons = weatherIcons.sun

@@ -133,6 +133,7 @@ class WeatherList extends Component {
     fetch(openWeatherUrl)
     .then(response => response.json())
     .then(data => {
+      console.log(data)
       
       let weatherArr = [];
       let {id, name} = data;
@@ -163,7 +164,7 @@ class WeatherList extends Component {
  
 
         
-    }
+    } 
     /*
     let weatherArr = []
     if(this.state.search.length > 3 && this.state.isUpdating === true) {
@@ -264,7 +265,7 @@ class WeatherList extends Component {
       let newCountryWeather = this.state.newWeather.map((country) => (
         <div className="added-country" key={country.id}>
           <div className="added-country-exit__container">
-          <i className="fas fa-times-circle" 
+          <i className="fas fa-times-circle fa-2x" 
           onClick={()=>this.deleteCountry(country.id)}>
           </i>
           </div>
@@ -299,7 +300,7 @@ class WeatherList extends Component {
                       placeholder="Search weather by city" />    
                       <div className="search-add__wrapper">       
                         <button className="weather-btn">Search</button>  
-                         <i className="fas fa-plus-circle fa-2x" onClick={this.addCountry}></i> 
+                         <i className="fas fa-plus-circle fa-3x" onClick={this.addCountry}></i> 
                          </div>
                   </form>
                   <p>{this.state.warning}</p>                
